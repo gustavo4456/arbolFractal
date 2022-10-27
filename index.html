@@ -1,0 +1,58 @@
+<!-- d) Desafío para los que no presentaron esta clase fractales en hojas de 
+    estilos en cascada o en javascript, para realizar efectos en páginas web. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/styleArbol.css" media="screen" />
+</head>
+
+<body>
+    <div class="contenedorPrincipal">
+        <div class="contenedor">
+            <h3>Generar Árbol fractal</h3>
+
+            <div>
+                <label>Coordenada X </label>
+                <input type="number" id="coordX" min="0" max="1000" value="500">
+            </div>
+            <div>
+                <label>Coordenada y </label>
+                <input type="number" id="coordY" min="0" max="800" value="800">
+            </div>
+            <div>
+                <label>Longitud de la rama </label>
+                <input type="number" id="longitud" min="30" max="200" value="120">
+            </div>
+            <div>
+                <label>Angulo </label>
+                <input type="number" id="angulo" min="-360" max="360" value="0">
+            </div>
+            <div>
+                <label>Ancho de la rama </label>
+                <input type="number" id="anchoRama" min="1" max="100" value="10">
+            </div>
+            <div>
+                <label>Color </label>
+                <input type="color" id="color">
+            </div>
+
+            <div>
+                <button id="btnGenerarArbol">Generar árbol</button>
+                <button id="btnLimpiar">Limpiar</button>
+            </div>
+
+
+        </div>
+
+        <div class="contenedorCanvas">
+            <canvas id="my_canvas" width="1000" height="800"></canvas>
+        </div>
+    </div>
+
+    <script src="js/funcionalidad.js"></script>
+</body>
+
+</html>
